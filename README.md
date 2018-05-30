@@ -16,3 +16,9 @@
 7. Run the local server using the following command:
     ``` 
     python app.py
+
+
+###Flask application
+Gunicorn
+NGINX as proxy server
+LetsEncrypt as SSL certificate
