@@ -19,10 +19,10 @@
      <ul class="navbar-nav mr-4">
 
        <li class="nav-item">
-         <a class="nav-link" href="#">About</a>
+         <a class="nav-link" data-value="about" href="#">About</a>
        </li>
        <li class="nav-item">
-         <a class="nav-link " href="#">Portfolio</a>
+         <a class="nav-link" href="#">Portfolio</a>
        </li>
        <li class="nav-item">
          <a class="nav-link " href="#">Team</a>
@@ -38,11 +38,67 @@
   </nav>
   <!-- end of navbar -->
   <!-- header -->
-  <header class="header">
+  <header class="header" style="background-image: url('/static/img/headerback.jpg')">
+    <div class="overlay"></div>
+    <div class="wrapper container">
+      <div class="description text-center">
+        <h3>Hello, Welcome to My Official Website
+        <p>
+          This website serves as portfolio of Masahiro Yoshida
+        </p>
+        <button class="btn btn-outline-secondary">See more</button>
+      </h3>
+      </div>
+    </div>
   </header>
   <!-- end of header -->
+  <!-- about me -->
+  <div class="about" id="about">
+    <div class="container">
+      <h1 class="text-center">About Me</h1>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <img src="/static/img/face.jpg" class="img-fluid" style="border-radius: 50%">
+          <span class="text-justify">Full Stack Engineer</span>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-12">
+          <h3>Masahiro Yoshida</h3>
+          <p>
+            Hi there, I am Masahiro Yoshida. I am majoring in Computer Science at The University of Texas at Dallas.
+            I am passoinate in learning new technologies as I taught python myself and got a full stack engineer internship
+            over summer, 2018. This website is using Flask.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of about me -->
   <!-- Contact form -->
+  <div class="contact-form" id="contact">
+	<div class="wrapper container">
+		<form>
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-12"><h1>Contact Me</h1>
+				</div>
+				<div class="col-lg-8 col-md-8 col-sm-12 right">
+				   <div class="form-group">
+				   	 <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="">
+				   </div>
+				   <div class="form-group">
+				   	 <input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com" name="email">
+				   </div>
+				   <div class="form-group">
+				   	 <textarea class="form-control form-control-lg">
 
+				   	 </textarea>
+				   </div>
+				   <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+				</div>
+			</div>
+	   </form>
+	 </div>
+  </div>
+  <!-- end of contact form -->
   <!-- add Javascript file from js file -->
   <script type="text/javascript" src="/static/js/jquery.min.js"></script>
   <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
