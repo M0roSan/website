@@ -14,4 +14,5 @@
     ```
     pip install -r requirements.txt
 7. Run the local server using the following command:
-    ``` python app.py
+    ``` 
+    python app.py
