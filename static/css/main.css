@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body{
+	padding: 0;
+	margin: 0;
+	background:#f4f4f4;
+}
+html,h1,h2,h3,h4,h5,h6,a{
+	font-family: "Raleway";
+}
+
+/* navbar*/
+.navbar{
+  background: #F97300;
+}
+.nav-link{
+  color: #f4f4f4;
+  cursor: pointer;
+}
+.navbar-brand{
+  color: #f4f4f4;
+  cursor: pointer;
+}
+.nav-link:hover{
+  background: #f4f4f4;
+  color: #F97300;
+}
+.navbar-collapse{
+  justify-content: flex-end;
+}
+.navbar-toggler{
+  background: #FFF !important;
+}
+/* header*/
+.header{
+	background-image: url('/static/img/morioka.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
