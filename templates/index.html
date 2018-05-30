@@ -6,13 +6,15 @@
 
   <link rel="stylesheet" type="text/css" href="/static/css/main.css">
   <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
 </head>
 <body>
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg fixed-top">
-    <a class="navbar-brand" href="#">Home</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="btn d-none d-md-inline-block nav-link" href="mailto:Masahiro.Yoshida.SE@gmail.com"><i class="fa fa-paper-plane" aria-hidden="true"></i> Email</a>
+      <a class="btn d-none d-md-inline-block nav-link" href="/static/resume.pdf"><i class="fa fa-file" title="resume"> Resume</i></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse " id="navbarSupportedContent">
@@ -22,32 +24,28 @@
          <a class="nav-link" data-value="about" href="#">About</a>
        </li>
        <li class="nav-item">
-         <a class="nav-link" href="#">Portfolio</a>
+         <a class="nav-link" data-value="experience" href="#">Experience</a>
        </li>
        <li class="nav-item">
-         <a class="nav-link " href="#">Team</a>
+         <a class="nav-link " data-value="education" href="#">Education</a>
        </li>
        <li class="nav-item">
-         <a class="nav-link " href="#">Post</a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link " href="#">Contact</a>
+         <a class="nav-link " data-value="contact" href="#">Contact</a>
        </li>
      </ul>
    </div>
   </nav>
   <!-- end of navbar -->
   <!-- header -->
-  <header class="header" style="background-image: url('/static/img/headerback.jpg')">
+  <header class="header" style="background-image: url('/static/img/morioka.jpg')">
     <div class="overlay"></div>
-    <div class="wrapper container">
+    <div class="container">
       <div class="description text-center">
-        <h3>Hello, Welcome to My Official Website
+        <h1>Hello, Welcome to My Official Website
         <p>
-          This website serves as portfolio of Masahiro Yoshida
+          I am Masahiro Yoshida. Scroll down to see more!
         </p>
-        <button class="btn btn-outline-secondary">See more</button>
-      </h3>
+      </h1>
       </div>
     </div>
   </header>
@@ -58,8 +56,7 @@
       <h1 class="text-center">About Me</h1>
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-12">
-          <img src="/static/img/face.jpg" class="img-fluid" style="border-radius: 50%">
-          <span class="text-justify">Full Stack Engineer</span>
+          <img src="/static/img/profile_pic.png" class="img-fluid">
         </div>
         <div class="col-lg-8 col-md-8 col-sm-12">
           <h3>Masahiro Yoshida</h3>
@@ -73,29 +70,82 @@
     </div>
   </div>
   <!-- end of about me -->
+  <!-- experience -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <h1 class="text-center">Experience</h1>
+      <div class="row">
+        <div class="work">
+          <div class="place">
+            <h3 class="name">CITT Services LLC</h3>
+            <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>Dallas, TX</div>
+          </div>
+          <div class="job">
+            <div class="title">Python Full Stack Engineer</div>
+            <div class="time">May, 2018 - Present</div>
+          </div>
+          <div class="desc">
+            <p>
+              <ul>
+                <li>Serve a Flask application with Gunicorn using NGINX on Google Cloud Platform. SSL certificate by LetsEncrypt</li>
+                <li>Automate deployment using Jenkins.</li>
+                <li>Creating a FAQ chatbot.</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of experience -->
+  <!-- education -->
+  <div class="education" id="education">
+    <div class="container">
+      <h1 class="text-center">Education</h1>
+      <div class="row">
+        <div class="item col-lg-6 col-md-6 col-sm-12">
+          <div class="item-in">
+            <h3 class="degree">B.S. in Computer Science</h3>
+            <div class="school">The University of Texas at Dallas</div>
+            <div class="duration">2017 - 2019</div>
+            <div class="gpa">Earned GPA: 4.00</div><br />
+            <div class="desc">
+              Data Structure and Alogorithm, Software Engineering, C/C++ in Unix Environment,
+              Computer Architecture, Theoretical Mathmatics.
+            </div>
+          </div>
+        </div>
+        <div class="item col-lg-6 col-md-6 col-sm-12">
+          <div class="item-in">
+            <h3 class="degree">A.S. in Software Engineering</h3>
+            <div class="school">Richland College</div>
+            <div class="duration">2016 - 2017</div>
+            <div class="gpa">Earned GPA: 4.00</div><br />
+            <div class="desc">
+              Object Oriented Programming, Concept of Mathmatics, Physics.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of education -->
   <!-- Contact form -->
-  <div class="contact-form" id="contact">
-	<div class="wrapper container">
-		<form>
-			<div class="row">
-				<div class="col-lg-4 col-md-4 col-sm-12"><h1>Contact Me</h1>
-				</div>
-				<div class="col-lg-8 col-md-8 col-sm-12 right">
-				   <div class="form-group">
-				   	 <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="">
-				   </div>
-				   <div class="form-group">
-				   	 <input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com" name="email">
-				   </div>
-				   <div class="form-group">
-				   	 <textarea class="form-control form-control-lg">
-
-				   	 </textarea>
-				   </div>
-				   <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
-				</div>
-			</div>
-	   </form>
+  <div class="contact" id="contact">
+	  <div class="container">
+			<h1 class="text-center">Contact Me</h1>
+      <p>I am currently pursuing an internship for the Fall 2018 semesters. I would love the opportunity to push and develop my skills in software engineering field while working with experienced engineers.</p>
+      <p><strong>I am interested in internships in:</strong></p>
+      <ul>
+          <li><i class="fa fa-check" aria-hidden="true"></i> Python Engineer</li>
+          <li><i class="fa fa-check" aria-hidden="true"></i> Full Stack Engineer</li>
+          <li><i class="fa fa-check" aria-hidden="true"></i> Software Engineering</li>
+      </ul><br />
+      <p>Feel free to contact me at <a href="Masahiro.Yoshida.SE@gmail.com">Masahiro.Yoshida.SE@gmail.com</a></p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+        <li class="list-inline-item"><a href="https://www.github.com/MasahiroYoshida/"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+      </ul>
 	 </div>
   </div>
   <!-- end of contact form -->

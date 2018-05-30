@@ -1,47 +1,50 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-body{
+body {
 	padding: 0;
 	margin: 0;
 	background:#f5f5f5;
 }
-html,h1,h2,h3,h4,h5,h6,a{
+html,h1,h2,h3,h4,h5,h6,a {
 	font-family: "Raleway";
 }
-.wrapper {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 /* navbar*/
-.navbar{
+.navbar {
   background: #F97300;
 }
-.nav-link{
+
+.nav-link {
   color: #f4f4f4;
   cursor: pointer;
 }
-.navbar-brand{
+.navbar-brand {
   color: #f4f4f4;
   cursor: pointer;
 }
-.nav-link:hover{
+.nav-link:hover {
   background: #f4f4f4;
   color: #F97300;
 }
-.navbar-collapse{
+.navbar-collapse {
   justify-content: flex-end;
 }
-.navbar-toggler{
+.navbar-toggler {
   background: #FFF !important;
 }
 /* header*/
-.header{
+.header {
 
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
 }
-.overlay{
+.header h1 {
+	font-size: 30px;
+}
+.header p {
+	font-size: 12px;
+}
+.overlay {
 	position: absolute;
 	min-height: 100%;
 	min-width: 100%;
@@ -49,78 +52,153 @@ html,h1,h2,h3,h4,h5,h6,a{
 	top: 0;
 	background: rgba(244,244,244,0.79);
 }
-.description{
+.description {
 	position: absolute;
 	top: 30%;
 	margin: auto;
 	padding: 2em;
 }
-.description h3{
+.description h1 {
 	color: #F97300;
 }
-.description p{
+.description p {
 	color: #666;
 	font-size: 20px;
 	width: 50%;
 	line-height: 1.5;
 }
-.description button{
+.description button {
 	border: 1px solid #F97300;
 	background:#F97300;
  	color:#fff;
 }
 
 /* about me */
-.about{
+.about {
 	margin: 4em 0;
 	padding: 1em;
 	position: relative;
 }
-.about h1{
+.about h1 {
 	color: #F97300;
 	margin: 2em;
 }
-.about img{
+.about img {
 	height: auto;
 	width: auto;
 }
-.about span{
+.about span {
 	display: block;
 	color: #888;
 	position: absolute;
 	left: 115px;
 }
-.about .desc{
+.about .desc {
  padding: 2em;
  border-left:4px solid #10828C;
 }
-.about .desc h3{
+.about .desc h3 {
  color: #10828C;
 }
-.about .desc p{
+.about .desc p {
  line-height:2;
  color:#888;
 }
 
-/* contact */
-.contact-form{
-	margin: 6em 0;
+/* experience*/
+.experience {
+	margin: 4em 0;
+	padding: 1em;
 	position: relative;
 }
-
-.contact-form h1{
-	padding:2em 1px;
+.experience h1 {
 	color: #F97300;
+	margin: 2em;
 }
-.contact-form .right{
-	max-width: 600px;
+.experince .timeline {
+	margin-top: 0;
+	margin-bottom: 45px;
+	font-size: 24px;
+	text-align: center;
 }
-.contact-form .right .btn-secondary{
-	background:  #F97300;
-	color: #fff;
-	border:0;
+.experince .work {
+	position: relative;
+	margin-bottom: 45px;
 }
-.contact-form .right .form-control::placeholder{
-	color: #888;
-	font-size: 16px;
+.experince .place {
+	position: relative;
 }
+.experince .name{
+		margin-top: 0;
+		margin-bottom: 15px;
+		font-size: 20px;
+		font-weight: 300;
+}
+.experience .location {
+	position: absolute;
+	right: 0;
+	top: 2px;
+	color: #8a8a8a;
+}
+.experince .location .fa {
+	margin-right: 5px;
+}
+.experince .job {
+		position: absolute;
+		left: -280px;
+		top: 0;
+}
+.experince .job .title {
+	font-size: 18px;
+	color: #00BCD4;
+}
+.experince .job .time {
+	color: #8a8a8a;
+}
+.experince .desc {
+	color: #666;
+}
+/* education*/
+.education {
+	margin: 4em 0;
+	padding: 1em;
+	position: relative;
+}
+.education h1 {
+	color: #F97300;
+	margin: 2em;
+}
+.education .item {
+	margin-bottom: 50px;
+}
+.education .item-in {
+	padding: 0 30px;
+}
+.education .degree {
+	font-size: 2px;
+	color: #F97300;
+	margin-top: 0;
+	margin-bottom: 0px;
+}
+.education .school {
+	font-weight: 400;
+	margin-bottom: 0px;
+	font-size: 18px;
+	font-weight: 300;
+}
+.education .duration {
+	color: #F97300;
+	margin-bottom: 14px;
+}
+.education .gpa {
+	color: #666;
+	font-size: 14px;
+}
+.education .desc  {
+	font-size: 12px;
+	color: #666;
+}
+/* */
+
+/* contact */
+.contact .dialog
