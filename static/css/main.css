@@ -33,7 +33,7 @@ html,h1,h2,h3,h4,h5,h6,a{
 }
 /* header*/
 .header{
-	background-image: url('/static/img/morioka.jpg');
+	background-image: url('/static/img/headerback.jpg');
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
