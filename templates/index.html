@@ -9,12 +9,10 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
 </head>
-<body>
+<body style="background:#f5f5f5;">
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg fixed-top">
-      <a class="btn d-none d-md-inline-block nav-link" href="mailto:Masahiro.Yoshida.SE@gmail.com"><i class="fa fa-paper-plane" aria-hidden="true"></i> Email</a>
-      <a class="btn d-none d-md-inline-block nav-link" href="/static/resume.pdf"><i class="fa fa-file" title="resume"> Resume</i></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse " id="navbarSupportedContent">
@@ -30,7 +28,16 @@
          <a class="nav-link " data-value="education" href="#">Education</a>
        </li>
        <li class="nav-item">
+         <a class="nav-link " data-value="skills" href="#">Skills</a>
+       </li>
+       <li class="nav-item">
          <a class="nav-link " data-value="contact" href="#">Contact</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link " href="mailto:Masahiro.Yoshida.SE@gmail.com"><i class="fa fa-paper-plane" aria-hidden="true"></i> Email</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link " href="/static/resume.pdf" target="_blank"><i class="fa fa-file" title="resume"> Resume</i></a>
        </li>
      </ul>
    </div>
@@ -41,9 +48,9 @@
     <div class="overlay"></div>
     <div class="container">
       <div class="description text-center">
-        <h1>Hello, Welcome to My Official Website
+        <h1>Welcome to My Official Website
         <p>
-          I am Masahiro Yoshida. Scroll down to see more!
+          I am Masahiro Yoshida. Scroll down to see me!
         </p>
       </h1>
       </div>
@@ -53,45 +60,62 @@
   <!-- about me -->
   <div class="about" id="about">
     <div class="container">
-      <h1 class="text-center">About Me</h1>
-      <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-12">
-          <img src="/static/img/profile_pic.png" class="img-fluid">
-        </div>
-        <div class="col-lg-8 col-md-8 col-sm-12">
-          <h3>Masahiro Yoshida</h3>
-          <p>
-            Hi there, I am Masahiro Yoshida. I am majoring in Computer Science at The University of Texas at Dallas.
-            I am passoinate in learning new technologies as I taught python myself and got a full stack engineer internship
-            over summer, 2018. This website is using Flask.
-          </p>
+      <div class="jumbotron">
+        <h1 class="text-center">About Me</h1>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <img src="/static/img/profile_pic.png" class="img-fluid">
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-12">
+            <h3>Masahiro Yoshida</h3>
+            <p>
+              Hi there, I am Masahiro Yoshida. I am majoring in Computer Science at The University of Texas at Dallas.
+              I am passoinate in learning new technologies as I taught python myself. This website is using python with Flask.
+              Source code can be referred <a href="https://github.com/MasahiroYoshida/website" target="_blank">here</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <!-- end of about me -->
   <!-- experience -->
-  <section class="experience section" id="experience">
+  <div class="experience" id="experience">
     <div class="container">
-      <h1 class="text-center">Experience</h1>
-      <div class="row">
-        <div class="work">
-          <div class="place">
-            <h3 class="name">CITT Services LLC</h3>
-            <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>Dallas, TX</div>
-          </div>
-          <div class="job">
-            <div class="title">Python Full Stack Engineer</div>
-            <div class="time">May, 2018 - Present</div>
-          </div>
-          <div class="desc">
-            <p>
-              <ul>
-                <li>Serve a Flask application with Gunicorn using NGINX on Google Cloud Platform. SSL certificate by LetsEncrypt</li>
-                <li>Automate deployment using Jenkins.</li>
-                <li>Creating a FAQ chatbot.</li>
-              </ul>
-            </p>
+      <div class="jumbotron">
+
+        <h1 class="text-center">Experience</h1>
+        <div class="row">
+          <div class="work">
+            <div class="place">
+              <h3 class="name">CITT Services LLC</h3>
+              <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>Dallas, TX</div>
+            </div>
+            <div class="job">
+              <div class="title">Python Full Stack Engineer</div>
+              <div class="time">May, 2018 - Present</div>
+            </div>
+            <div class="desc">
+              <p>
+                <ul>
+                  <li>
+                    At a start up company, first project I was assigned is to deploy a test website which reflects changes
+                  made on a git repository. I served a Flask application with Gunicorn using NGINX on Virtual Machine, Google Cloud Platform.
+                  I set up a Jenkins job so Jenkins detects changes and execute shell scripts on the VM.
+                  </li>
+                  <li>
+                    Second project is to propose a Machine Learnign platform and work on the platform to create predictive models
+                  as such classification, decision tree, and so on.
+                  </li>
+                  <li>
+                    Another project is making a chatbot. This has not been completed, but using framework and APIs I am working to make
+                  a FAQ bot, which replies customer's questions. Another bot which is integrated with ML classifies user emails and
+                  distribute them to specific department. Last, but not least, assistant bot notifies clients about economics and
+                  currencies.
+                  </li>
+                </ul>
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -101,28 +125,30 @@
   <!-- education -->
   <div class="education" id="education">
     <div class="container">
-      <h1 class="text-center">Education</h1>
-      <div class="row">
-        <div class="item col-lg-6 col-md-6 col-sm-12">
-          <div class="item-in">
-            <h3 class="degree">B.S. in Computer Science</h3>
-            <div class="school">The University of Texas at Dallas</div>
-            <div class="duration">2017 - 2019</div>
-            <div class="gpa">Earned GPA: 4.00</div><br />
-            <div class="desc">
-              Data Structure and Alogorithm, Software Engineering, C/C++ in Unix Environment,
-              Computer Architecture, Theoretical Mathmatics.
+      <div class="jumbotron">
+        <h1 class="text-center">Education</h1>
+        <div class="row">
+          <div class="item col-lg-6 col-md-6 col-sm-12">
+            <div class="item-in">
+              <h3 class="degree">B.S. in Computer Science</h3>
+              <div class="school">The University of Texas at Dallas</div>
+              <div class="duration">2017 - 2019</div>
+              <div class="gpa">Earned GPA: 4.00</div><br />
+              <div class="desc">
+                Data Structure and Alogorithm, Software Engineering, C/C++ in Unix Environment,
+                Computer Architecture, Theoretical Mathmatics.
+              </div>
             </div>
           </div>
-        </div>
-        <div class="item col-lg-6 col-md-6 col-sm-12">
-          <div class="item-in">
-            <h3 class="degree">A.S. in Software Engineering</h3>
-            <div class="school">Richland College</div>
-            <div class="duration">2016 - 2017</div>
-            <div class="gpa">Earned GPA: 4.00</div><br />
-            <div class="desc">
-              Object Oriented Programming, Concept of Mathmatics, Physics.
+          <div class="item col-lg-6 col-md-6 col-sm-12">
+            <div class="item-in">
+              <h3 class="degree">A.S. in Software Engineering</h3>
+              <div class="school">Richland College</div>
+              <div class="duration">2016 - 2017</div>
+              <div class="gpa">Earned GPA: 4.00</div><br />
+              <div class="desc">
+                Object Oriented Programming, Concept of Mathmatics, Physics.
+              </div>
             </div>
           </div>
         </div>
@@ -130,24 +156,73 @@
     </div>
   </div>
   <!-- end of education -->
+  <!-- stack of technologies -->
+  <div class="skills" id="skills">
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="text-center">Skills</h1>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-8">
+            <h3 class="type">Front End Technologies</h3
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>jQuery</li>
+                <li>Bootstrap</li>
+              </ul>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-8">
+            <h3 class="type">Back End Technologies</h3>
+            <ul>
+              <li>Python</li>
+              <li>C#</li>
+              <li>Java</li>
+              <li>MIPS</li>
+              <li>SQL</li>
+              <li>C/C++</li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-8">
+            <h3 class="type">Others</h3>
+            <ul>
+              <li><strong>OS</strong>: Ubuntu 16.04, OS X, Windows</li>
+              <li><strong>Web</strong>: Flask, Gunicorn, NGINX</li>
+              <li><strong>Tools</strong>: Jenkins</li>
+              <li>Git, Bash scripting, XML, JSON, AJAX</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of stack of technologies -->
   <!-- Contact form -->
   <div class="contact" id="contact">
 	  <div class="container">
-			<h1 class="text-center">Contact Me</h1>
-      <p>I am currently pursuing an internship for the Fall 2018 semesters. I would love the opportunity to push and develop my skills in software engineering field while working with experienced engineers.</p>
-      <p><strong>I am interested in internships in:</strong></p>
-      <ul>
-          <li><i class="fa fa-check" aria-hidden="true"></i> Python Engineer</li>
-          <li><i class="fa fa-check" aria-hidden="true"></i> Full Stack Engineer</li>
-          <li><i class="fa fa-check" aria-hidden="true"></i> Software Engineering</li>
-      </ul><br />
-      <p>Feel free to contact me at <a href="Masahiro.Yoshida.SE@gmail.com">Masahiro.Yoshida.SE@gmail.com</a></p>
-      <ul class="list-inline">
-        <li class="list-inline-item"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-        <li class="list-inline-item"><a href="https://www.github.com/MasahiroYoshida/"><i class="fab fa-github" aria-hidden="true"></i></a></li>
-      </ul>
+      <div class="jumbotron">
+        <h1 class="text-center">Contact Me</h1>
+        <p>I am currently pursuing an internship for the Fall 2018 semesters. I would love the opportunity to push and develop my skills in software engineering field while working with experienced engineers.</p>
+        <p><strong>I am interested in internships in:</strong></p>
+        <ul>
+            <li>Python Engineer</li>
+            <li>Full Stack Engineer</li>
+            <li>Software Engineering</li>
+        </ul><br />
+        <p>Feel free to contact me at <a href="Masahiro.Yoshida.SE@gmail.com">Masahiro.Yoshida.SE@gmail.com</a></p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="https://www.linkedin.com/in/masahiro-yoshida-a96388156/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+          <li class="list-inline-item"><a href="https://www.github.com/MasahiroYoshida/"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
 	 </div>
   </div>
+
+  <footer class="text-center">
+    <div class="container">
+      <small>Written by Masahiro Yoshida</small>
+    </div>
+  </footer>
   <!-- end of contact form -->
   <!-- add Javascript file from js file -->
   <script type="text/javascript" src="/static/js/jquery.min.js"></script>
