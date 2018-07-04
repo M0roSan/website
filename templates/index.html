@@ -38,12 +38,6 @@
 </head>
 <body style="background:#f5f5f5;">
 
-    <div
-      class="fb-customerchat"
-      page_id="256830158206029"
-      ref="">
-    </div>
-
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -263,13 +257,18 @@
   </div>
   <!-- end of contact form -->
 
+  <div
+    class="fb-customerchat"
+    page_id="256830158206029"
+    ref="">
+  </div>
+
+
   <footer class="text-center">
     <div class="container">
       <small>Written by Masahiro Yoshida</small>
     </div>
   </footer>
-
-
 
   <!-- add Javascript file from js file -->
   <script type="text/javascript" src="/static/js/jquery.min.js"></script>
@@ -277,36 +276,5 @@
   <script type="text/javascript" src="/static/js/main.js"></script>
 
 </body>
-<script>
-      window.fbMessengerPlugins = window.fbMessengerPlugins || {
-        init: function () {
-          FB.init({
-            appId            : '1678638095724206',
-            autoLogAppEvents : true,
-            xfbml            : true,
-            version          : 'v2.10'
-          });
-        }, callable: []
-      };
-      window.fbAsyncInit = window.fbAsyncInit || function () {
-        window.fbMessengerPlugins.callable.forEach(function (item) { item(); });
-        window.fbMessengerPlugins.init();
-      };
-      setTimeout(function () {
-        (function (d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) { return; }
-          js = d.createElement(s);
-          js.id = id;
-          js.src = "//connect.facebook.net/en_US/sdk.js";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-      }, 0);
-      </script>
 
-      <div
-        class="fb-customerchat"
-        page_id="2018971321757232"
-        ref="">
-      </div>
-    </html>
+</html>
